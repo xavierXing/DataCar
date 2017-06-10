@@ -7,21 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D20CA9041EEBEB2400AC09A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9031EEBEB2400AC09A3 /* AppDelegate.swift */; };
-		D20CA9061EEBEB2400AC09A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9051EEBEB2400AC09A3 /* ViewController.swift */; };
 		D20CA9091EEBEB2400AC09A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20CA9071EEBEB2400AC09A3 /* Main.storyboard */; };
 		D20CA90B1EEBEB2400AC09A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20CA90A1EEBEB2400AC09A3 /* Assets.xcassets */; };
 		D20CA90E1EEBEB2400AC09A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20CA90C1EEBEB2400AC09A3 /* LaunchScreen.storyboard */; };
+		D20CA9391EEC4D5F00AC09A3 /* ActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9281EEC4D5F00AC09A3 /* ActivityVC.swift */; };
+		D20CA93A1EEC4D5F00AC09A3 /* ChoicenessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA92A1EEC4D5F00AC09A3 /* ChoicenessVC.swift */; };
+		D20CA93B1EEC4D5F00AC09A3 /* ChooseCarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA92C1EEC4D5F00AC09A3 /* ChooseCarVC.swift */; };
+		D20CA93C1EEC4D5F00AC09A3 /* ClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA92E1EEC4D5F00AC09A3 /* ClassExtension.swift */; };
+		D20CA93D1EEC4D5F00AC09A3 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9301EEC4D5F00AC09A3 /* NewsVC.swift */; };
+		D20CA93E1EEC4D5F00AC09A3 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9321EEC4D5F00AC09A3 /* Define.swift */; };
+		D20CA93F1EEC4D5F00AC09A3 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9331EEC4D5F00AC09A3 /* MainTabbar.swift */; };
+		D20CA9401EEC4D5F00AC09A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9351EEC4D5F00AC09A3 /* AppDelegate.swift */; };
+		D20CA9411EEC4D5F00AC09A3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D20CA9361EEC4D5F00AC09A3 /* Info.plist */; };
+		D20CA9421EEC4D5F00AC09A3 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D20CA9001EEBEB2400AC09A3 /* DataCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D20CA9031EEBEB2400AC09A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D20CA9051EEBEB2400AC09A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D20CA9081EEBEB2400AC09A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D20CA90A1EEBEB2400AC09A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20CA90D1EEBEB2400AC09A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D20CA90F1EEBEB2400AC09A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20CA9281EEC4D5F00AC09A3 /* ActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityVC.swift; sourceTree = "<group>"; };
+		D20CA92A1EEC4D5F00AC09A3 /* ChoicenessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicenessVC.swift; sourceTree = "<group>"; };
+		D20CA92C1EEC4D5F00AC09A3 /* ChooseCarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCarVC.swift; sourceTree = "<group>"; };
+		D20CA92E1EEC4D5F00AC09A3 /* ClassExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassExtension.swift; sourceTree = "<group>"; };
+		D20CA9301EEC4D5F00AC09A3 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		D20CA9321EEC4D5F00AC09A3 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		D20CA9331EEC4D5F00AC09A3 /* MainTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbar.swift; sourceTree = "<group>"; };
+		D20CA9351EEC4D5F00AC09A3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D20CA9361EEC4D5F00AC09A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +69,85 @@
 		D20CA9021EEBEB2400AC09A3 /* DataCar */ = {
 			isa = PBXGroup;
 			children = (
-				D20CA9031EEBEB2400AC09A3 /* AppDelegate.swift */,
-				D20CA9051EEBEB2400AC09A3 /* ViewController.swift */,
+				D20CA9271EEC4D5F00AC09A3 /* Activity */,
+				D20CA9291EEC4D5F00AC09A3 /* Choiceness */,
+				D20CA92B1EEC4D5F00AC09A3 /* ChooseCar */,
+				D20CA92D1EEC4D5F00AC09A3 /* ClassExtension */,
+				D20CA92F1EEC4D5F00AC09A3 /* News */,
+				D20CA9311EEC4D5F00AC09A3 /* Others */,
+				D20CA9341EEC4D5F00AC09A3 /* ProjectFile */,
+				D20CA9371EEC4D5F00AC09A3 /* Setting */,
 				D20CA9071EEBEB2400AC09A3 /* Main.storyboard */,
 				D20CA90A1EEBEB2400AC09A3 /* Assets.xcassets */,
 				D20CA90C1EEBEB2400AC09A3 /* LaunchScreen.storyboard */,
-				D20CA90F1EEBEB2400AC09A3 /* Info.plist */,
 			);
 			path = DataCar;
+			sourceTree = "<group>";
+		};
+		D20CA9271EEC4D5F00AC09A3 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				D20CA9281EEC4D5F00AC09A3 /* ActivityVC.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		D20CA9291EEC4D5F00AC09A3 /* Choiceness */ = {
+			isa = PBXGroup;
+			children = (
+				D20CA92A1EEC4D5F00AC09A3 /* ChoicenessVC.swift */,
+			);
+			path = Choiceness;
+			sourceTree = "<group>";
+		};
+		D20CA92B1EEC4D5F00AC09A3 /* ChooseCar */ = {
+			isa = PBXGroup;
+			children = (
+				D20CA92C1EEC4D5F00AC09A3 /* ChooseCarVC.swift */,
+			);
+			path = ChooseCar;
+			sourceTree = "<group>";
+		};
+		D20CA92D1EEC4D5F00AC09A3 /* ClassExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D20CA92E1EEC4D5F00AC09A3 /* ClassExtension.swift */,
+			);
+			path = ClassExtension;
+			sourceTree = "<group>";
+		};
+		D20CA92F1EEC4D5F00AC09A3 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D20CA9301EEC4D5F00AC09A3 /* NewsVC.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D20CA9311EEC4D5F00AC09A3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D20CA9321EEC4D5F00AC09A3 /* Define.swift */,
+				D20CA9331EEC4D5F00AC09A3 /* MainTabbar.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D20CA9341EEC4D5F00AC09A3 /* ProjectFile */ = {
+			isa = PBXGroup;
+			children = (
+				D20CA9351EEC4D5F00AC09A3 /* AppDelegate.swift */,
+				D20CA9361EEC4D5F00AC09A3 /* Info.plist */,
+			);
+			path = ProjectFile;
+			sourceTree = "<group>";
+		};
+		D20CA9371EEC4D5F00AC09A3 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20CA9411EEC4D5F00AC09A3 /* Info.plist in Resources */,
 				D20CA90E1EEBEB2400AC09A3 /* LaunchScreen.storyboard in Resources */,
 				D20CA90B1EEBEB2400AC09A3 /* Assets.xcassets in Resources */,
 				D20CA9091EEBEB2400AC09A3 /* Main.storyboard in Resources */,
@@ -137,8 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20CA9061EEBEB2400AC09A3 /* ViewController.swift in Sources */,
-				D20CA9041EEBEB2400AC09A3 /* AppDelegate.swift in Sources */,
+				D20CA9401EEC4D5F00AC09A3 /* AppDelegate.swift in Sources */,
+				D20CA9421EEC4D5F00AC09A3 /* SettingVC.swift in Sources */,
+				D20CA93A1EEC4D5F00AC09A3 /* ChoicenessVC.swift in Sources */,
+				D20CA93B1EEC4D5F00AC09A3 /* ChooseCarVC.swift in Sources */,
+				D20CA93C1EEC4D5F00AC09A3 /* ClassExtension.swift in Sources */,
+				D20CA9391EEC4D5F00AC09A3 /* ActivityVC.swift in Sources */,
+				D20CA93E1EEC4D5F00AC09A3 /* Define.swift in Sources */,
+				D20CA93D1EEC4D5F00AC09A3 /* NewsVC.swift in Sources */,
+				D20CA93F1EEC4D5F00AC09A3 /* MainTabbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +357,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PDRSADE88S;
 				INFOPLIST_FILE = DataCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = XH.DataCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -276,7 +373,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PDRSADE88S;
 				INFOPLIST_FILE = DataCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = XH.DataCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
