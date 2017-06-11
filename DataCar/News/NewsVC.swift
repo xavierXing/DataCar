@@ -10,6 +10,9 @@ import UIKit
 
 class NewsVC: UIViewController,UIScrollViewDelegate {
     
+    
+    var selectedBtn: UIButton?;
+    
     //#MARK: -邢浩- lazy loading
     lazy var scrollView: UIScrollView? = {
         let scroll = UIScrollView(frame: self.view.frame);
@@ -27,7 +30,20 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
         return srollView;
     }()
     
+    lazy var searchBtn: UIButton? = {
+        let search = UIButton(type: UIButtonType.custom);
+        search.frame = CGRect(x: XHScreenW - XHScreenW * 0.145, y: 0, width: XHScreenW * 0.145, height: CGFloat((self.navigationController?.navigationBar.frame.size.height)!
+))
+        search.setImage(UIImage(named: ""), for: .normal);
+        search.setTitleColor(UIColor.rgbColor(r: 246, g: 50, b: 51), for: .normal);
+        search.addTarget(withBlock: { (_) in
+            //跳转到搜索界面
+        })
+        return search;
+    }()
     
+    
+    //#MARK: -邢浩- overide
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         UIApplication.shared.statusBarStyle = .lightContent;
@@ -42,10 +58,11 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
     private func settingContoller() -> Void {
         self.view.addSubview(self.scrollView!);
         self.navigationItem.titleView = self.scrollTitle;
-        
+        self.makeButtonControls();
+        self.makeControllersControls();
     }
     
-    func makeControls() -> Void {
+    private func makeButtonControls() -> Void {
         let btn_width = XHScreenW * 0.12;
         let btn_titles = ["热点", "视频","直播", "行业", "评测", "导购", "新车", "用车", "文化", "游记", "技术", "行情"];
         for i in 0..<btn_titles.count {
@@ -56,10 +73,21 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 14);
             btn.titleLabel?.textAlignment = .left;
             btn.addTarget(withBlock: { (_) in
-                XLog(message: "11111");
+                
             })
-            
+            self.scrollTitle?.addSubview(btn);
+            if btn.tag == 0 {
+                btn.isEnabled = false;
+                btn.titleLabel?.font = UIFont.init(name: "Helvetica-Bold", size: 17);
+                self.selectedBtn = btn;
+            }
         }
     }
+    
+    private func makeControllersControls() -> Void {
+        
+    }
+    
+    
     
 }
