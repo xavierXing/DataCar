@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.4.0)
+  - SnapKit (3.2.0)
+  - SwiftTheme (0.3.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - SnapKit
+  - SwiftTheme
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftTheme: 15ff615b8d2a84d24259611f136e1635c747cc77
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: bef06bab97b416ba0aa8adc5b57a29b77ec0cd49
+
+COCOAPODS: 1.2.1

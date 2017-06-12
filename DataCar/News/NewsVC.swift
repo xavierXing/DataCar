@@ -39,6 +39,7 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
         search.addTarget(withBlock: { (_) in
             //跳转到搜索界面
         })
+        
         return search;
     }()
     
@@ -58,6 +59,7 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
     private func settingContoller() -> Void {
         self.view.addSubview(self.scrollView!);
         self.navigationItem.titleView = self.scrollTitle;
+        self.makeSearchBtn();
         self.makeButtonControls();
         self.makeControllersControls();
     }
@@ -88,6 +90,8 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
         
     }
     
-    
+    private func makeSearchBtn() -> Void {
+        self.scrollTitle?.addSubview(self.searchBtn!);
+    }
     
 }

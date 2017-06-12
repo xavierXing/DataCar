@@ -21,9 +21,12 @@
 		D20CA9411EEC4D5F00AC09A3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D20CA9361EEC4D5F00AC09A3 /* Info.plist */; };
 		D20CA9421EEC4D5F00AC09A3 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */; };
 		D20CA9451EED38ED00AC09A3 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9441EED38ED00AC09A3 /* RootVC.swift */; };
+		DF9CC9E820B3AAF6A4259B44 /* Pods_DataCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F176474B6438682FC672D98 /* Pods_DataCar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F176474B6438682FC672D98 /* Pods_DataCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		997B4AC756DEBEF0E2ED39B0 /* Pods-DataCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataCar/Pods-DataCar.debug.xcconfig"; sourceTree = "<group>"; };
 		D20CA9001EEBEB2400AC09A3 /* DataCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20CA9081EEBEB2400AC09A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D20CA90A1EEBEB2400AC09A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		D20CA9361EEC4D5F00AC09A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		D20CA9441EED38ED00AC09A3 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		D5701AE8594C8F44898C400E /* Pods-DataCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataCar/Pods-DataCar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +50,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9CC9E820B3AAF6A4259B44 /* Pods_DataCar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F6A5861475C34BB13D8059C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				997B4AC756DEBEF0E2ED39B0 /* Pods-DataCar.debug.xcconfig */,
+				D5701AE8594C8F44898C400E /* Pods-DataCar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9C9E019064E499176624C62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F176474B6438682FC672D98 /* Pods_DataCar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D20CA8F71EEBEB2400AC09A3 = {
 			isa = PBXGroup;
 			children = (
 				D20CA9021EEBEB2400AC09A3 /* DataCar */,
 				D20CA9011EEBEB2400AC09A3 /* Products */,
+				3F6A5861475C34BB13D8059C /* Pods */,
+				C9C9E019064E499176624C62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20CA9121EEBEB2400AC09A3 /* Build configuration list for PBXNativeTarget "DataCar" */;
 			buildPhases = (
+				C56A2BF8E7A68F9038D8A28E /* [CP] Check Pods Manifest.lock */,
 				D20CA8FC1EEBEB2400AC09A3 /* Sources */,
 				D20CA8FD1EEBEB2400AC09A3 /* Frameworks */,
 				D20CA8FE1EEBEB2400AC09A3 /* Resources */,
+				60F7EA561C5D12B76E5D399B /* [CP] Embed Pods Frameworks */,
+				D21ABDE399488D90177F37EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +256,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60F7EA561C5D12B76E5D399B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataCar/Pods-DataCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56A2BF8E7A68F9038D8A28E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D21ABDE399488D90177F37EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataCar/Pods-DataCar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D20CA8FC1EEBEB2400AC09A3 /* Sources */ = {
@@ -365,6 +440,7 @@
 		};
 		D20CA9131EEBEB2400AC09A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997B4AC756DEBEF0E2ED39B0 /* Pods-DataCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PDRSADE88S;
@@ -381,6 +457,7 @@
 		};
 		D20CA9141EEBEB2400AC09A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5701AE8594C8F44898C400E /* Pods-DataCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PDRSADE88S;
