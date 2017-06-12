@@ -10,3 +10,6 @@ import Foundation
 
 let tabBarLightColor: String = "#f64e50";
 let tabBarNightColor: String = "#942f30";
+
+let backgroundLightColor: String = "#eeeeee";
+let backgroundNightColor: String = "#1b1b1b";

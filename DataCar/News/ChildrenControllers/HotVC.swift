@@ -1,20 +1,19 @@
 //
-//  RootVC.swift
+//  HotVC.swift
 //  DataCar
 //
-//  Created by 邢浩 on 2017/6/11.
+//  Created by LeoTai on 17/6/12.
 //  Copyright © 2017年 邢浩. All rights reserved.
 //
 
 import UIKit
 
-class RootVC: UITableViewController {
-    
-    //#MARK: -邢浩- 控制器类型
-    var type: String?;
+class HotVC: RootVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.yellow;
+        
     }
 
 }
