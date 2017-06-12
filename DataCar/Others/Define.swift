@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 //#MARK: -邢浩- 当前系统版本
 let XHVersion = (UIDevice.current.systemVersion as NSString).floatValue
 

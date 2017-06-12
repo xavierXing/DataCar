@@ -21,6 +21,8 @@
 		D20CA9411EEC4D5F00AC09A3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D20CA9361EEC4D5F00AC09A3 /* Info.plist */; };
 		D20CA9421EEC4D5F00AC09A3 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */; };
 		D20CA9451EED38ED00AC09A3 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9441EED38ED00AC09A3 /* RootVC.swift */; };
+		D263BF7C1EEE5C940073CD71 /* ThirdLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263BF7B1EEE5C940073CD71 /* ThirdLibrary.swift */; };
+		D263BF7E1EEE60DB0073CD71 /* NigthtTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263BF7D1EEE60DB0073CD71 /* NigthtTheme.swift */; };
 		DF9CC9E820B3AAF6A4259B44 /* Pods_DataCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F176474B6438682FC672D98 /* Pods_DataCar.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		D20CA9361EEC4D5F00AC09A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		D20CA9441EED38ED00AC09A3 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		D263BF7B1EEE5C940073CD71 /* ThirdLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibrary.swift; sourceTree = "<group>"; };
+		D263BF7D1EEE60DB0073CD71 /* NigthtTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NigthtTheme.swift; sourceTree = "<group>"; };
 		D5701AE8594C8F44898C400E /* Pods-DataCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataCar/Pods-DataCar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +160,8 @@
 			children = (
 				D20CA9321EEC4D5F00AC09A3 /* Define.swift */,
 				D20CA9331EEC4D5F00AC09A3 /* MainTabbar.swift */,
+				D263BF7B1EEE5C940073CD71 /* ThirdLibrary.swift */,
+				D263BF7D1EEE60DB0073CD71 /* NigthtTheme.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -315,10 +321,12 @@
 				D20CA9451EED38ED00AC09A3 /* RootVC.swift in Sources */,
 				D20CA93A1EEC4D5F00AC09A3 /* ChoicenessVC.swift in Sources */,
 				D20CA93B1EEC4D5F00AC09A3 /* ChooseCarVC.swift in Sources */,
+				D263BF7E1EEE60DB0073CD71 /* NigthtTheme.swift in Sources */,
 				D20CA93C1EEC4D5F00AC09A3 /* ClassExtension.swift in Sources */,
 				D20CA9391EEC4D5F00AC09A3 /* ActivityVC.swift in Sources */,
 				D20CA93E1EEC4D5F00AC09A3 /* Define.swift in Sources */,
 				D20CA93D1EEC4D5F00AC09A3 /* NewsVC.swift in Sources */,
+				D263BF7C1EEE5C940073CD71 /* ThirdLibrary.swift in Sources */,
 				D20CA93F1EEC4D5F00AC09A3 /* MainTabbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +451,7 @@
 			baseConfigurationReference = 997B4AC756DEBEF0E2ED39B0 /* Pods-DataCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PDRSADE88S;
 				INFOPLIST_FILE = /Users/xinghao/Desktop/DataCarSwift/DataCar/ProjectFile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -451,6 +460,7 @@
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = XH.DataCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -460,6 +470,7 @@
 			baseConfigurationReference = D5701AE8594C8F44898C400E /* Pods-DataCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PDRSADE88S;
 				INFOPLIST_FILE = /Users/xinghao/Desktop/DataCarSwift/DataCar/ProjectFile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -467,6 +478,7 @@
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = XH.DataCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

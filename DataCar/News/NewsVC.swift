@@ -8,9 +8,10 @@
 
 import UIKit
 
+
 class NewsVC: UIViewController,UIScrollViewDelegate {
     
-    
+    let selectedFont: String = "Helvetica-Bold";
     var selectedBtn: UIButton?;
     
     //#MARK: -邢浩- lazy loading
@@ -48,6 +49,8 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
         UIApplication.shared.statusBarStyle = .lightContent;
+        self.navigationController?.navigationBar.theme_barTintColor = [tabBarLightColor,tabBarNightColor];
+        
     }
     
     override func viewDidLoad() {
@@ -80,7 +83,7 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
             self.scrollTitle?.addSubview(btn);
             if btn.tag == 0 {
                 btn.isEnabled = false;
-                btn.titleLabel?.font = UIFont.init(name: "Helvetica-Bold", size: 17);
+                btn.titleLabel?.font = UIFont.init(name: selectedFont, size: 17);
                 self.selectedBtn = btn;
             }
         }
@@ -94,4 +97,51 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
         self.scrollTitle?.addSubview(self.searchBtn!);
     }
     
+    func titleBtnClick(btn: UIButton) -> Void {
+        self.selectedBtn?.isEnabled = true;
+        self.selectedBtn?.titleLabel?.font = UIFont.systemFont(ofSize: 14);
+        btn.isEnabled = false;
+        btn.titleLabel?.font = UIFont.init(name: selectedFont, size: 17);
+        var offset: CGPoint = (self.scrollTitle?.contentOffset)!;
+        offset.x = CGFloat(btn.tag) * (self.scrollTitle?.frame.size.width)!;
+        
+        if CGFloat(btn.tag) * XHScreenW * 0.12 > (self.scrollTitle?.frame.size.width)! {
+            var offset: CGPoint = (self.scrollTitle?.contentOffset)!;
+            offset.x = (self.scrollTitle?.contentSize.width)! - (self.scrollTitle?.frame.size.width)!;
+            self.scrollTitle?.setContentOffset(offset, animated: true);
+        } else {
+            var offset: CGPoint = (self.scrollTitle?.contentOffset)!;
+            offset.x = 0;
+            self.scrollTitle?.setContentOffset(offset, animated: true);
+        }
+        self.scrollTitle?.setContentOffset(offset, animated: true);
+    }
+    
+    //#MARK: -邢浩- scroll Delegate
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        let index: Int = Int(scrollView.contentOffset.x / scrollView.frame.size.width)
+        guard let vc: UITableViewController = self.childViewControllers[index] as? UITableViewController else {
+            return
+        }
+        vc.view.frame.origin.x = scrollView.contentOffset.x;
+        vc.view.frame.origin.y = 0;
+        vc.view.frame.size.height = scrollView.frame.size.height;
+        if index != 6 {
+            let bottom: CGFloat = (self.tabBarController?.tabBar.frame.size.height)!;
+            vc.tableView.contentInset = UIEdgeInsetsMake(0, 0, bottom + 64, 0);
+            vc.tableView.scrollIndicatorInsets = vc.tableView.contentInset;
+            scrollView.addSubview(vc.view);
+        } else {
+            scrollView.addSubview(vc.view);
+        }
+        
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let index: Int = Int(scrollView.contentOffset.x / scrollView.frame.size.width);
+        guard let btn_click: UIButton = self.scrollTitle?.subviews[index] as? UIButton else {
+            return;
+        }
+        self.titleBtnClick(btn: btn_click);
+    }
 }
