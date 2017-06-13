@@ -13,3 +13,7 @@ let tabBarNightColor: String = "#942f30";
 
 let backgroundLightColor: String = "#eeeeee";
 let backgroundNightColor: String = "#1b1b1b";
+
+let textLightColor: String = "#333333";
+let textNightColor: String = "#acacac";
+

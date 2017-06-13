@@ -34,6 +34,9 @@
 		D20CA9411EEC4D5F00AC09A3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D20CA9361EEC4D5F00AC09A3 /* Info.plist */; };
 		D20CA9421EEC4D5F00AC09A3 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */; };
 		D20CA9451EED38ED00AC09A3 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CA9441EED38ED00AC09A3 /* RootVC.swift */; };
+		D2190A971EEF7A0100B6370B /* NetWorkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2190A961EEF7A0100B6370B /* NetWorkErrorView.swift */; };
+		D2190A9A1EEF90BD00B6370B /* XHNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2190A991EEF90BD00B6370B /* XHNetWork.swift */; };
+		D2190A9C1EEFBA2000B6370B /* XHRefershHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2190A9B1EEFBA2000B6370B /* XHRefershHead.swift */; };
 		D263BF7C1EEE5C940073CD71 /* ThirdLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263BF7B1EEE5C940073CD71 /* ThirdLibrary.swift */; };
 		D263BF7E1EEE60DB0073CD71 /* NigthtTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263BF7D1EEE60DB0073CD71 /* NigthtTheme.swift */; };
 		DF9CC9E820B3AAF6A4259B44 /* Pods_DataCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F176474B6438682FC672D98 /* Pods_DataCar.framework */; };
@@ -70,6 +73,9 @@
 		D20CA9361EEC4D5F00AC09A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20CA9381EEC4D5F00AC09A3 /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		D20CA9441EED38ED00AC09A3 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		D2190A961EEF7A0100B6370B /* NetWorkErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkErrorView.swift; sourceTree = "<group>"; };
+		D2190A991EEF90BD00B6370B /* XHNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHNetWork.swift; sourceTree = "<group>"; };
+		D2190A9B1EEFBA2000B6370B /* XHRefershHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHRefershHead.swift; sourceTree = "<group>"; };
 		D263BF7B1EEE5C940073CD71 /* ThirdLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibrary.swift; sourceTree = "<group>"; };
 		D263BF7D1EEE60DB0073CD71 /* NigthtTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NigthtTheme.swift; sourceTree = "<group>"; };
 		D5701AE8594C8F44898C400E /* Pods-DataCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataCar/Pods-DataCar.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 		D20CA92F1EEC4D5F00AC09A3 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				D2190A981EEF902D00B6370B /* Models */,
+				D2190A951EEF799300B6370B /* Views */,
 				D20CA9431EED38B000AC09A3 /* ChildrenControllers */,
 				D20CA9301EEC4D5F00AC09A3 /* NewsVC.swift */,
 			);
@@ -228,6 +236,23 @@
 				2AE3BE781EEE84AE00DB267F /* PriceVC.swift */,
 			);
 			path = ChildrenControllers;
+			sourceTree = "<group>";
+		};
+		D2190A951EEF799300B6370B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2190A961EEF7A0100B6370B /* NetWorkErrorView.swift */,
+				D2190A9B1EEFBA2000B6370B /* XHRefershHead.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2190A981EEF902D00B6370B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2190A991EEF90BD00B6370B /* XHNetWork.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,10 +398,13 @@
 				2AE3BE6D1EEE841900DB267F /* ShoppingVC.swift in Sources */,
 				D20CA9391EEC4D5F00AC09A3 /* ActivityVC.swift in Sources */,
 				2AE3BE691EEE838A00DB267F /* IndustryVC.swift in Sources */,
+				D2190A9A1EEF90BD00B6370B /* XHNetWork.swift in Sources */,
 				D20CA93E1EEC4D5F00AC09A3 /* Define.swift in Sources */,
 				2AE3BE731EEE845500DB267F /* CultureVC.swift in Sources */,
 				D20CA93D1EEC4D5F00AC09A3 /* NewsVC.swift in Sources */,
 				2AE3BE751EEE846C00DB267F /* TravelVC.swift in Sources */,
+				D2190A9C1EEFBA2000B6370B /* XHRefershHead.swift in Sources */,
+				D2190A971EEF7A0100B6370B /* NetWorkErrorView.swift in Sources */,
 				2AE3BE611EEE700B00DB267F /* SearchVC.swift in Sources */,
 				D263BF7C1EEE5C940073CD71 /* ThirdLibrary.swift in Sources */,
 				D20CA93F1EEC4D5F00AC09A3 /* MainTabbar.swift in Sources */,
@@ -505,7 +533,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
-				INFOPLIST_FILE = /Users/LeoTai/Desktop/DataCar/DataCar/ProjectFile/Info.plist;
+				INFOPLIST_FILE = /Users/xinghao/Desktop/DataCarSwift/DataCar/ProjectFile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "";
@@ -524,7 +552,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
-				INFOPLIST_FILE = /Users/LeoTai/Desktop/DataCar/DataCar/ProjectFile/Info.plist;
+				INFOPLIST_FILE = /Users/xinghao/Desktop/DataCarSwift/DataCar/ProjectFile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "";

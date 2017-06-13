@@ -8,6 +8,9 @@
 
 import UIKit
 
+enum vctype: Int {
+    case HotVC,VideoVC,Live,IndustryVC,EvaluationVC,ShoppingVC,NewCarVC,UseCarVC,CultureVC,TravelVC,TechnologyVC,PriceVC
+}
 
 class NewsVC: UIViewController,UIScrollViewDelegate {
     
@@ -91,7 +94,7 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
             btn.titleLabel?.font = UIFont.systemFont(ofSize: 14);
             btn.titleLabel?.textAlignment = .left;
             btn.addTarget(withBlock: { (_) in
-                
+                self.titleBtnClick(btn: btn);
             })
             self.scrollTitle?.addSubview(btn);
             if btn.tag == 0 {
@@ -117,6 +120,8 @@ class NewsVC: UIViewController,UIScrollViewDelegate {
             }
             
             let childrenVC = clsType.init();
+            let type: vctype = vctype(rawValue: i)!;
+            childrenVC.TYPE_VC = type;
             self.addChildViewController(childrenVC);
         };
     }
@@ -176,6 +181,7 @@ extension NewsVC {
         self.titleBtnClick(btn: btn_click);
     }
 }
+
 
 
 

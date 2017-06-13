@@ -13,7 +13,9 @@ class HotVC: RootVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.yellow;
-        
+        self.jsonBlock = { json in
+            XLog(message: json);
+        }
     }
 
 }
