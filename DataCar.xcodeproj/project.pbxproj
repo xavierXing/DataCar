@@ -39,6 +39,7 @@
 		D2190A9C1EEFBA2000B6370B /* XHRefershHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2190A9B1EEFBA2000B6370B /* XHRefershHead.swift */; };
 		D263BF7C1EEE5C940073CD71 /* ThirdLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263BF7B1EEE5C940073CD71 /* ThirdLibrary.swift */; };
 		D263BF7E1EEE60DB0073CD71 /* NigthtTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263BF7D1EEE60DB0073CD71 /* NigthtTheme.swift */; };
+		D26A9F531EF0C676008003AC /* HotVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A9F521EF0C676008003AC /* HotVCModel.swift */; };
 		DF9CC9E820B3AAF6A4259B44 /* Pods_DataCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F176474B6438682FC672D98 /* Pods_DataCar.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		D2190A9B1EEFBA2000B6370B /* XHRefershHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHRefershHead.swift; sourceTree = "<group>"; };
 		D263BF7B1EEE5C940073CD71 /* ThirdLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibrary.swift; sourceTree = "<group>"; };
 		D263BF7D1EEE60DB0073CD71 /* NigthtTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NigthtTheme.swift; sourceTree = "<group>"; };
+		D26A9F521EF0C676008003AC /* HotVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotVCModel.swift; sourceTree = "<group>"; };
 		D5701AE8594C8F44898C400E /* Pods-DataCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataCar/Pods-DataCar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				D2190A991EEF90BD00B6370B /* XHNetWork.swift */,
+				D26A9F521EF0C676008003AC /* HotVCModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				2AE3BE671EEE835400DB267F /* Live.swift in Sources */,
 				2AE3BE6F1EEE842800DB267F /* NewCarVC.swift in Sources */,
 				2AE3BE6B1EEE83F500DB267F /* EvaluationVC.swift in Sources */,
+				D26A9F531EF0C676008003AC /* HotVCModel.swift in Sources */,
 				2AE3BE711EEE843B00DB267F /* UseCarVC.swift in Sources */,
 				D20CA93A1EEC4D5F00AC09A3 /* ChoicenessVC.swift in Sources */,
 				D20CA93B1EEC4D5F00AC09A3 /* ChooseCarVC.swift in Sources */,

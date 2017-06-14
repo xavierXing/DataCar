@@ -21,7 +21,7 @@ class RootVC: UITableViewController {
     var netWorkSource: Array<Any>?;
     var netWork_Link: String?;
     var json: AnyObject?;
-    var jsonBlock:((_ source : AnyObject) -> ())?;
+    var jsonBlock:((_ source : AnyObject, _ RefreshType : refreshtype) -> ())?;
     
     //#MARK: -邢浩- link
     let netWorkLink_HTTP: String = "http://api.news18a.com/";//Http 请求前缀
@@ -146,10 +146,9 @@ class RootVC: UITableViewController {
         XH_NetWork.getRequest(urlString: netWork_Link!, success: { (response) in
             self.json = response as AnyObject;
             if self.jsonBlock != nil {
-                self.jsonBlock!(self.json!);
+                self.jsonBlock!(self.json!,.header);
+                
             }
-//            self.tableView.reloadData();
-//            self.tableView.mj_header.endRefreshing();
         }) { (error) in
             self.tableView.addSubview(self.netWorkError);
             self.tableView.mj_header.endRefreshing();
@@ -158,12 +157,20 @@ class RootVC: UITableViewController {
     
     func loadingDataWithParameters(Parameters : [String: AnyObject], RefreshType : refreshtype) -> Void {
         XH_NetWork.getRequestWithParameters(urlString: netWork_Link!, params: Parameters, success: { (response) in
+            
             self.json = response as AnyObject;
-            if self.jsonBlock != nil {
-                self.jsonBlock!(self.json!);
+            if RefreshType == .footer {//尾部刷新才会更新page
+                if self.jsonBlock != nil {
+                    self.jsonBlock!(self.json!,.footer);
+                }
+                self.page += 1;
+            } else {
+                if self.jsonBlock != nil {
+                    self.jsonBlock!(self.json!,.header);
+                }
             }
-//            self.endRefreshLoad(reloadType: RefreshType);
-            self.page += 1;
+            self.endRefreshLoad(reloadType: RefreshType);
+            
         }) { (error) in
             self.tableView.addSubview(self.netWorkError);
             self.tableView.reloadData();

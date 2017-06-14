@@ -12,3 +12,4 @@ import SnapKit
 import Alamofire
 import MJRefresh
 import SwiftyJSON
+import MJExtension

@@ -7,4 +7,5 @@ target 'DataCar' do
         pod 'Alamofire'
         pod 'SwiftTheme'
 	pod 'MJRefresh'
+        pod 'MJExtension'
 end
